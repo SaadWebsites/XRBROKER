@@ -3,27 +3,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
-      <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-4" style={{ color: "var(--accent)" }}>
-        XRBROKER
-      </h1>
-      <p className="text-lg md:text-xl max-w-md mb-8" style={{ color: "var(--muted)" }}>
-        Share moments. Connect with people. Be yourself.
-      </p>
+      <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-4" style={{ color: "var(--accent)" }}>XRBROKER</h1>
+      <p className="text-lg md:text-xl max-w-md mb-8" style={{ color: "var(--muted)" }}>Share moments. Connect with people. Be yourself.</p>
       <div className="flex gap-4">
-        <Link href="/signup" className="px-8 py-3 rounded-xl text-white font-semibold text-lg" style={{ background: "var(--accent)" }}>
-          Get Started
-        </Link>
-        <Link href="/login" className="px-8 py-3 rounded-xl font-semibold text-lg border" style={{ borderColor: "var(--line)" }}>
-          Log In
-        </Link>
-      </div>
-      <div className="mt-20 grid grid-cols-3 gap-6 max-w-lg opacity-20">
-        <div className="h-24 rounded-xl" style={{ background: "var(--accent)" }} />
-        <div className="h-32 rounded-xl bg-gray-200" />
-        <div className="h-20 rounded-xl" style={{ background: "var(--accent-soft)" }} />
-        <div className="h-28 rounded-xl bg-gray-200" />
-        <div className="h-20 rounded-xl" style={{ background: "var(--accent)" }} />
-        <div className="h-32 rounded-xl bg-gray-200" />
+        <Link href="/signup/" className="px-8 py-3 rounded-xl text-white font-semibold text-lg" style={{ background: "var(--accent)" }}>Get Started</Link>
+        <Link href="/login/" className="px-8 py-3 rounded-xl font-semibold text-lg border" style={{ borderColor: "var(--line)" }}>Log In</Link>
       </div>
     </div>
   );
