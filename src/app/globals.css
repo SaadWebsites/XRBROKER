@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #7C3AED;
+  --accent-strong: #5B21B6;
+  --accent-soft: #EDE9FE;
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --coal: #0F0F0F;
+  --charcoal: #1A1A2E;
+  --muted: #737373;
+  --line: #E5E5E5;
+}
+
+body {
+  background: var(--bg);
+  color: var(--coal);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
